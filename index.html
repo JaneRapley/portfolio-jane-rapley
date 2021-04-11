@@ -3,47 +3,92 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">   
+    <link rel="stylesheet" href="./assets/reset.css"/>
+    <link rel="stylesheet" href="./assets/style.css"/>
     <title>Jane's Portfolio</title>
 </head>
  
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#idforaboutme">About Me</a>
-                </li>
-                <li>
-                    <a href="idforaboutwork">My Work</a>
-                </li>
-                <li>
-                    <a href="#idforcontactme">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-
+    <header id='header-background'>
+        <div class="hfimage"></div>
+        <h1>Jane Rapley</h1>
+        <p>
+            Journey of an aspiring web developer
+        </p> 
     </header>
 
     <main>
-        <h1>Jane Rapley</h1>
-            <p>
-                Journey of an aspiring web developer
-            </p> 
-                <img src="assets/AboutMePic.jpg" alt="Picture of Jane smiling with hair in top knot">
-        <section>
-            <h2>About Me</h2>        
+        <nav>
+             <ul>
+                <li class="listspace">
+                    <a href="#idforaboutme">About Me</a>
+                  </li>
+               <li>
+                    <a href="#idforaboutwork">My Work</a>
+                </li>
+                <li>
+                    <a href="#idforcontactme">Contact Me</a>
+                 </li>
+             </ul>
+         </nav>
+    
+       
+
+         <section>
+             <div>
+                <img src="images/AboutMePic.jpg" alt="Picture of Jane smiling with hair in top knot" class="myimage">
+            </div>
+            <h2> About Me <a id='idforaboutme'></h2>        
                 <p>
-                    Blah blah come back later and add a quick paragraph.
+                    Learning how to become a web developer is difficult. I am learning coding to change my career path. A job where you can create something out of nothing everyday is my dream. It will conincide with my future plans for myself and my family.
                 </p>
-            <h2>My Work</h2>    
+             
+                <h2> My Work <a id='idforaboutwork'></h2>  
+
+        </section> 
+        
+        <section class='flexbox-container'>
+           
+                <div class="project1">
+                    <a href="#">
+                    <img src="./images/projectone.jpeg" alt="garden of succulents">
+                    </a>
+                </div>
+
+                <div class="project2">
+                    <a href="#">
+                    <img src="./images/project2.jpeg" alt="grassy beach with sandy bath at sunset">
+                </a>   
+                </div>
+                <div class="project3">
+                    <a href="#">
+                    <img src="./images/projectthree.jpeg" alt="forest of trees mossy forest floor">
+                    </a>
+                </div>
+        </section>
+        
+        <section>
+            <form>
+                <h3>Contact Me!<a id='idforcontactme'></h3>
+                <p>
+                <label for="username">Name:</label>
+                <input class="text-input" id="username" type="text" placeholder="First Name"/>
+                </p>
+                <p>
+                <label for="email">E-mail:</label>
+                <input class="text-input" id="email" type="text" placeholder="name@website.com" />
+                </p>
+                <p>
+                <label for="message">Message:</label>
+                <textarea class="text-input" id="message" placeholder="I am interested in talking with you!"></textarea>
+                </p>
+            </form>
         </section>
     </main>
 
 
     <footer>
-
+        <span>Thanks for Visiting!</span>
     </footer>
 </body>
