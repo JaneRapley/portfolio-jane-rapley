@@ -4,3 +4,4 @@ There was no code provided this week. I created an html, reset, style, and readm
 to improve upon as my skills in web development sharpen. It was extremely difficult. 
 
 ## Deployed link
+https://janerapley.github.io/portfolio-jane-rapley/ 
